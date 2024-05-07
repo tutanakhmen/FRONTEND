@@ -1,0 +1,10 @@
+.container {
+    background-color: #48cae4;
+    padding: 1rem;
+    color: white;
+    text-align: center;
+}
+
+.footer__title{
+    margin-bottom: 1rem;
+}
