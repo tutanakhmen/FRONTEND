@@ -25,7 +25,7 @@ function Form(props) {
     
 
 
-    // membuat state title dan date error
+    // membuat state title dan date error   
     const [isTitleEmpty, setIsTitleEmpty] = useState(false)
     const [isDateEmpty, setIsDateEmpty] = useState(false)
     const [isPosterEmpty, setIsPosterEmpty] = useState(false)

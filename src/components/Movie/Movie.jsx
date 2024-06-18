@@ -5,6 +5,9 @@ function Movie(props) {
     const { movie } = props
 
 
+    
+
+
     return (
         <StyledMovie>
                         <img src={movie.poster} alt="" />        
