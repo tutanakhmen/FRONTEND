@@ -13,20 +13,21 @@ function Popular() {
             const URL = `http://api.themoviedb.org/3/movie/popular?api_key=${API_KEY}`
     
             const response = await axios(URL)
-            setMovies(response.data.result)
+            setMovies(response.data.results)
     
         }
 
         fetchPopularMovies();
     }, [])
 
-    console.log(movies)
+
 
     return (
         <div>
             <Hero />
-            <Movies movies={movies}/>
+            
         <h2>Popular Movie</h2>
+        <Movies movies={movies}/>
 
         </div>
     )
