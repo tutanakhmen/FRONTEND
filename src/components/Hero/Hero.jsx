@@ -33,6 +33,7 @@ function Hero() {
         }
 
         getDetailMovie();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
     // Render only when `movie` and `idTrailer` are available
