@@ -8,7 +8,7 @@ import styles from "./DetailMovie.module.css"
 function DetailMovie() {
     const { id } = useParams();
     const [idTrailer, setIdTrailer] = useState("");
-    const [movie, setMovie] = useState(null); // Initialize movie as null initially
+    const [movie, setMovie] = useState(null); 
     const genres = movie && movie.genres.map((genre) => genre.name).join(", ");
 
     useEffect(() => {
@@ -28,11 +28,10 @@ function DetailMovie() {
             }
         }
 
-        getDetailMovie(); // Invoke the function to fetch movie details
-    }, [id]); // Include id in the dependency array to fetch details when id changes
-
+        getDetailMovie();
+    }, [id]); 
     if (!movie) {
-        return <div>Loading...</div>; // Add a loading state while fetching data
+        return <div>Loading...</div>; 
     }
 
     return (
